@@ -10,14 +10,22 @@
 
 <body>
     <div class="container">
-        <h1>Weather App</h1>
+        <h1> Weather App</h1>
         <div class="search-box">
             <input type="text" id="cityInput" placeholder="Enter city name" />
-            <button onclick="getWeather()">Search</button>
+            <button id="searchBtn" onclick="getWeather()">Search</button>
         </div>
+
+        <div class="toggle-box">
+            <label for="unitToggle">Show in Fahrenheit</label>
+            <input type="checkbox" id="unitToggle" onchange="toggleUnit()" />
+        </div>
+
+
         <div id="weatherData" class="weather-box">
             <!-- Weather data will appear here -->
         </div>
+
     </div>
 
     <script src="script.js"></script>
